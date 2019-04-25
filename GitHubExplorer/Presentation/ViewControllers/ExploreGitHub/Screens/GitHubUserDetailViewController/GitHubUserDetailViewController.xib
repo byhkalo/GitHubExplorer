@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GitHubUserDetailViewController" customModule="GitHubExplorer" customModuleProvider="target">
+            <connections>
+                <outlet property="userLocationMap" destination="6f0-ew-n8T" id="0yr-d7-7ds"/>
+                <outlet property="userNicknameLabel" destination="2eu-20-lDh" id="mi3-8E-oz9"/>
+                <outlet property="view" destination="K7J-ni-tEs" id="oVt-ZT-T5K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="K7J-ni-tEs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Nickname" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-20-lDh">
+                    <rect key="frame" x="20" y="68" width="374" height="29.5"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6f0-ew-n8T">
+                    <rect key="frame" x="20" y="105" width="374" height="757"/>
+                </mapView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vE7-7w-3Xl" firstAttribute="trailing" secondItem="6f0-ew-n8T" secondAttribute="trailing" constant="20" id="76C-dG-qf8"/>
+                <constraint firstItem="2eu-20-lDh" firstAttribute="top" secondItem="vE7-7w-3Xl" secondAttribute="top" constant="24" id="9my-At-uEw"/>
+                <constraint firstItem="6f0-ew-n8T" firstAttribute="leading" secondItem="vE7-7w-3Xl" secondAttribute="leading" constant="20" id="JCW-wh-PUd"/>
+                <constraint firstItem="vE7-7w-3Xl" firstAttribute="trailing" secondItem="2eu-20-lDh" secondAttribute="trailing" constant="20" id="SJP-J5-er1"/>
+                <constraint firstItem="6f0-ew-n8T" firstAttribute="bottom" secondItem="vE7-7w-3Xl" secondAttribute="bottom" id="WE7-U9-m4l"/>
+                <constraint firstItem="6f0-ew-n8T" firstAttribute="top" secondItem="2eu-20-lDh" secondAttribute="bottom" constant="7.5" id="xiK-If-JhF"/>
+                <constraint firstItem="2eu-20-lDh" firstAttribute="leading" secondItem="vE7-7w-3Xl" secondAttribute="leading" constant="20" id="yaN-YT-kiC"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vE7-7w-3Xl"/>
+            <point key="canvasLocation" x="23.188405797101453" y="50.892857142857139"/>
+        </view>
+    </objects>
+</document>
