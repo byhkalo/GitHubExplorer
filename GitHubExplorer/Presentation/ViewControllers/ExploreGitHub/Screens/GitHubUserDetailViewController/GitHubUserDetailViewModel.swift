@@ -31,7 +31,7 @@ class GitHubUserDetailViewModel {
     return selectedItem.login
   }
   var itemLocation: String {
-    return selectedItem.url
+    return selectedUserItem?.location ?? ""
   }
   var exploreDetailUpdateHandler: ExploreDetailUpdateHandler?
   // MARK: - Private Properties
