@@ -25,8 +25,15 @@
 import Foundation
 
 extension URLRequest {
-    var method: HTTPMethod? {
-        guard let httpMethod = self.httpMethod else { return nil }
-        return HTTPMethod(rawValue: httpMethod)
+    /// Returns the `httpMethod` as Alamofire's `HTTPMethod` type.
+    public var method: HTTPMethod? {
+        get { httpMethod.flatMap(HTTPMethod.init) }
+        set { httpMethod = newValue?.rawValue }
+    }
+
+    public func validate() throws {
+        if method == .get, let bodyData = httpBody {
+            throw AFError.urlRequestValidationFailed(reason: .bodyDataInGETRequest(bodyData))
+        }
     }
 }

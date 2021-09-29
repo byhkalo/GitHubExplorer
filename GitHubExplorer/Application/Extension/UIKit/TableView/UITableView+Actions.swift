@@ -3,12 +3,12 @@
 //
 //
 
-import UIKit
 import ObjectiveC
+import UIKit
 
 private var associationKey = "private_TableViewActionsDelegate"
 
-protocol TableViewActionsDelegate: class {
+protocol TableViewActionsDelegate: AnyObject {
   func tableView(_ tableView: UITableView, didAction action: AnyUserAction, onHeaderIn section: Int)
   func tableView(_ tableView: UITableView, didAction action: AnyUserAction, onCellAt indexPath: IndexPath)
 }

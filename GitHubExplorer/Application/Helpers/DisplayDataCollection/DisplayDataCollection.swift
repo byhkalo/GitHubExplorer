@@ -8,10 +8,11 @@ import UIKit
 // MARK: - General
 
 protocol DisplayDataCollection {
-
+  ///Static Properties
   static var modelsForRegistration: [AnyViewDataModelType.Type] { get }
-
+  ///Datasource Properties
   var numberOfSections: Int { get }
+  ///Datasource Functions
   func numberOfRows(in section: Int) -> Int
   func model(for indexPath: IndexPath) -> AnyViewDataModelType
 }

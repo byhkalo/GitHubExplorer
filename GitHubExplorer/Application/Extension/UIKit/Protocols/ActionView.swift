@@ -19,6 +19,6 @@ protocol AnyActionView {
 
 // MARK: - Cell Actions Delegate
 
-protocol AnyActionViewDelegate: class {
+protocol AnyActionViewDelegate: AnyObject {
   func actionView(_ view: AnyActionView, didAction action: AnyUserAction)
 }

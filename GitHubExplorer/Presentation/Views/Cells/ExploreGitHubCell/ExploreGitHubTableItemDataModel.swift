@@ -20,7 +20,7 @@ extension ExploreGitHubTableItemDataModel: ViewDataModelType {
     cell.avatarImageView.sd_cancelCurrentImageLoad()
     cell.avatarImageView.sd_setImage(with: URL(string: thumbImageURL),
                                      placeholderImage: nil,
-                                     options: SDWebImageOptions.progressiveDownload,
+                                     options: .progressiveLoad,
                                      completed: nil)
   }
 }

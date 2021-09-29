@@ -4,8 +4,8 @@
 //
 
 import Foundation
-import UIKit
 import QuartzCore
+import UIKit
 
 /// Computed properties, based on the backing CALayer property, that are visible in Interface Builder.
 extension UIView {

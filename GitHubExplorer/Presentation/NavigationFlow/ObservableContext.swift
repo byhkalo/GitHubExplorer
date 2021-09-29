@@ -44,7 +44,7 @@ class ObservableContext<ContextChange: AnyContextChange>: AnyObservableContext {
         return maxId
     }
     func addHandler(for change: Change, _ completion: @escaping CompletionHandler) -> Int {
-        return addHandler({ (currentChange) in
+        return addHandler({ currentChange in
             if currentChange == change {
                 completion()
             }
@@ -57,9 +57,8 @@ class ObservableContext<ContextChange: AnyContextChange>: AnyObservableContext {
         self.change = change
     }
     private func notifyHandlers() {
-        observingHandlers.forEach { (handler) in
+        observingHandlers.forEach { handler in
             handler.value(change)
         }
     }
 }
-

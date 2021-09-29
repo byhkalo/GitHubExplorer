@@ -7,8 +7,8 @@ import Foundation
 import UIKit
 
 extension UICollectionView {
-
-  @objc func indexPathsForElementsInRect(_ rect: CGRect) -> [IndexPath] {
+  @objc
+  func indexPathsForElementsInRect(_ rect: CGRect) -> [IndexPath] {
     if let allLayoutAttributes = collectionViewLayout.layoutAttributesForElements(in: rect),
       allLayoutAttributes.isEmpty == false {
       var result = [IndexPath]()

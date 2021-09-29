@@ -23,5 +23,4 @@ class ExploreGitHubTableCell: UITableViewCell, AnyActionView {
   @IBAction func mapButtonPressed(_ sender: UIButton) {
     actionsDelegate?.actionView(self, didAction: ExploreGitHubTableCellAction.mapAction)
   }
-  
 }

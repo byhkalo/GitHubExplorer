@@ -62,6 +62,17 @@ extension ExploreGitHubViewController: UITableViewDelegate {
     viewModel.selectItem(at: indexPath)
   }
 }
+// MARK: - TableViewActionsDelegate
+extension ExploreGitHubViewController: TableViewActionsDelegate {
+  func tableView(_ tableView: UITableView, didAction action: AnyUserAction, onCellAt indexPath: IndexPath) {
+    guard let tableCellAction = action as? ExploreGitHubTableCellAction
+      else { return }
+    switch tableCellAction {
+    case .mapAction:
+      viewModel.selectItem(at: indexPath)
+    }
+  }
+}
 // MARK: - Private Subscribe
 fileprivate extension ExploreGitHubViewController {
   func unsubscribe(anyViewModel: AnyExploreGitHubViewModel) {
@@ -77,17 +88,6 @@ fileprivate extension ExploreGitHubViewController {
         default: break
         }
       }
-    }
-  }
-}
-// MARK: - TableViewActionsDelegate
-extension ExploreGitHubViewController: TableViewActionsDelegate {
-  func tableView(_ tableView: UITableView, didAction action: AnyUserAction, onCellAt indexPath: IndexPath) {
-    guard let tableCellAction = action as? ExploreGitHubTableCellAction
-      else { return }
-    switch tableCellAction {
-    case .mapAction:
-      viewModel.selectItem(at: indexPath)
     }
   }
 }

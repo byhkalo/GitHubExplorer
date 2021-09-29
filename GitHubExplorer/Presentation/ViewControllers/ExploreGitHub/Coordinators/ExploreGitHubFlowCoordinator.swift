@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-protocol AnyExploreGitHubRouter: class {
+protocol AnyExploreGitHubRouter: AnyObject {
   func openDetailScreen()
   func closeDetailScreen()
 }

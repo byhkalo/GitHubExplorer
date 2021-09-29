@@ -12,7 +12,6 @@ extension UITableView {
 }
 
 fileprivate extension UITableView {
-
   func registerNibs(fromType displayCollectionType: DisplayDataCollection.Type) {
     for cellModel in displayCollectionType.modelsForRegistration {
       if let tableViewClass = cellModel.viewClass() as? UITableViewCell.Type {

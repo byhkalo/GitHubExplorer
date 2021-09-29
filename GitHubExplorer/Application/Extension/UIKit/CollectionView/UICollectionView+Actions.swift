@@ -3,12 +3,12 @@
 //
 //
 
-import UIKit
 import ObjectiveC
+import UIKit
 
 private var associationKey = "private_CollectionViewActionsDelegate"
 
-protocol CollectionViewActionsDelegate: class {
+protocol CollectionViewActionsDelegate: AnyObject {
   func collectionView(_ collectionView: UICollectionView,
                       didAction action: AnyUserAction,
                       onCellAt indexPath: IndexPath)

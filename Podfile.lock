@@ -1,26 +1,26 @@
 PODS:
-  - Alamofire (5.0.0-beta.3)
-  - SDWebImage (4.4.6):
-    - SDWebImage/Core (= 4.4.6)
-  - SDWebImage/Core (4.4.6)
-  - SwiftLint (0.31.0)
+  - Alamofire (5.4.3)
+  - SDWebImage (5.11.1):
+    - SDWebImage/Core (= 5.11.1)
+  - SDWebImage/Core (5.11.1)
+  - SwiftLint (0.43.1)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0-beta.3)
-  - SDWebImage (~> 4.0)
+  - Alamofire (~> 5.4)
+  - SDWebImage (~> 5.0)
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - SDWebImage
     - SwiftLint
 
 SPEC CHECKSUMS:
-  Alamofire: 50d6fa7e8cbe7f84559e86ab641ffd029db655f8
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
-  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
+  SwiftLint: 99f82d07b837b942dd563c668de129a03fc3fb52
 
-PODFILE CHECKSUM: 430b21c34d1a6f5fe0508d2d190e32d30abadc7d
+PODFILE CHECKSUM: 6319f73fa53dec003b56c73931682598c17de5c8
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.10.0

@@ -33,10 +33,8 @@ class GitHubUserDetailViewController: UIViewController {
   // MARK: - Configuration
   func configureNavigationBar() {
     navigationItem.title = viewModel.itemTitle
-    if #available(iOS 11.0, *) {
-      navigationController?.navigationBar.prefersLargeTitles = true
-      navigationItem.largeTitleDisplayMode = .automatic
-    }
+    navigationController?.navigationBar.prefersLargeTitles = true
+    navigationItem.largeTitleDisplayMode = .automatic
   }
   func bindItemDetail() {
     userNicknameLabel.text = viewModel.itemTitle

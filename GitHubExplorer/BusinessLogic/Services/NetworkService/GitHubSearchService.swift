@@ -60,7 +60,6 @@ enum API {
   case search(SearchLanguageType)
   case userLogin(String)
   // Properties
-  // swiftlint:disable empty_enum_arguments
   var mainURLString: String {
     switch self {
     case .search(_):

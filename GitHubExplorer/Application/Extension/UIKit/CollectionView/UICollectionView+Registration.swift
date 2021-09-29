@@ -6,7 +6,6 @@
 import UIKit
 
 extension UICollectionView {
-
   enum SupplementaryType {
     case header
     case footer
@@ -33,7 +32,8 @@ extension UICollectionView {
     }
   }
 
-  @objc func registerNib(for viewClass: UICollectionViewCell.Type) {
+  @objc
+  func registerNib(for viewClass: UICollectionViewCell.Type) {
     register(viewClass.nib, forCellWithReuseIdentifier: viewClass.identifier)
   }
 
@@ -41,7 +41,8 @@ extension UICollectionView {
     register(headerClass.nib, forSupplementaryViewOfKind: type.kind, withReuseIdentifier: headerClass.identifier)
   }
 
-  @objc func registerClass(for viewClass: UICollectionViewCell.Type) {
+  @objc
+  func registerClass(for viewClass: UICollectionViewCell.Type) {
     register(viewClass, forCellWithReuseIdentifier: viewClass.identifier)
   }
 }

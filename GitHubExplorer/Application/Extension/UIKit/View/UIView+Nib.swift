@@ -7,7 +7,6 @@ import Foundation
 import UIKit
 
 extension UIView {
-
   @objc static var nib: UINib {
     return UINib(nibName: String(describing: self), bundle: nil)
   }
